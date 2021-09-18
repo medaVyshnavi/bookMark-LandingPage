@@ -1,0 +1,140 @@
+.download{
+    margin:0 3rem;
+    text-align:center;
+
+    @include breakpoint-Up(small){
+        margin-top:11rem;
+    }
+
+    &_header{
+        h3{
+            font-size: 22px;
+            color:$veryDarkBlue;
+        }
+
+        p{
+            font-size: 14px;
+            margin: 1rem 0;
+
+            @include breakpoint-Up(x-small){
+                font-size: 16px;
+                margin: 1rem 3.8rem;
+            }
+
+            @include breakpoint-Up(small){
+                margin: 1rem 11rem;
+            }
+
+            @include breakpoint-Up(larger){
+                margin: 1rem 17rem;
+            }
+        }
+    }
+    
+    &_card{
+        margin-bottom:5rem;
+
+        @include breakpoint-Up(small){
+            display:flex;
+            justify-content:space-around;
+            align-content: center;
+        }
+
+        @include breakpoint-Up(large){
+            margin: 5rem 4rem;
+        }
+
+        @include breakpoint-Up(larger){
+            margin: 5rem 6rem;
+        }
+
+        @include breakpoint-Up(x-large){
+            margin: 5rem 8rem;
+        }
+    }
+
+    .card{
+        border-radius: 1rem;
+        box-shadow: 0 3px 7px 0 rgba(0, 0, 0,0.19);
+        margin-top: 3rem;
+
+        @include breakpoint-Up(x-small){
+            margin: 3rem;
+        }
+
+        @include breakpoint-Up(smaller){
+            margin: 5rem 9rem;
+        }
+
+        @include breakpoint-Up(small){
+            margin: 5rem 1rem 0;
+        }
+
+        @include breakpoint-Up(medium){
+            margin: 5rem 1rem;
+        }
+
+        .dots{
+            margin: 1rem 0;
+            width:100%
+        }
+
+        p{
+            margin:0.5rem 1.5rem;
+        }
+
+        button{
+            background-color: #5368df;
+            padding: 1rem 2.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 14px;
+
+            @include breakpoint-Up(small){
+                padding: 1rem;
+                margin-bottom: 1.5rem;
+                font-size: 12px;
+            }
+        }
+
+        button:hover{
+            color:$softBlue;
+            background-color: transparent;
+            border: 1px solid $softBlue;
+        }
+    } 
+
+    &_logo{
+        width: 30%;
+        margin: 2.5rem 0;
+    }
+
+    
+}
+
+#card_chrome{
+    @include breakpoint-Up(medium){
+        margin:3rem 1rem 7rem;
+    }
+
+    @include breakpoint-Up(larger){
+        margin:3rem 2.5rem 7rem;
+    }
+
+    @include breakpoint-Up(x-large){
+        margin:2rem 1rem 8rem;
+    }
+}
+
+#card_opera{
+    @include breakpoint-Up(medium){
+        margin:7rem 1rem 3rem;
+    }
+
+    @include breakpoint-Up(larger){
+        margin:7rem 2.5rem 3rem;
+    }
+
+    @include breakpoint-Up(x-large){
+        margin:8rem 1rem 2rem;
+    }
+}

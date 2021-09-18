@@ -1,0 +1,259 @@
+.hero{
+    
+    @include breakpoint-Up(small){
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    &_backgroundImage{
+        height: 28vh;
+        background-color: #5368df;
+        margin: 8rem 0 0 4rem;
+        border-bottom-left-radius: 6rem;
+
+        @include breakpoint-Up(xx-small){
+            height: 40vh;
+            margin-left: 8rem;
+        }
+
+        @include breakpoint-Up(x-small){
+            position: relative;
+            height: 46vh;
+            margin-left: 7rem;
+        }
+
+        @include breakpoint-Up(smaller){
+            margin-top:10rem;
+            margin-left: 11rem;
+        }
+
+        @include breakpoint-Up(small){
+            width: 46vw;
+            margin-left: 1rem;
+            height: 36vh;
+            margin-top: 8.5rem;
+        }
+
+        @include breakpoint-Up(medium){
+            height: 42vh;
+            margin: 7rem 0 1rem 5rem;
+        }
+
+        @include breakpoint-Up(large){
+            height: 46vh;
+            margin: 8rem 0 1rem 5rem;
+            width: 42vw;
+        }
+
+        @include breakpoint-Up(larger){
+            margin: 7rem 0 1rem 5rem;
+        }
+
+        @include breakpoint-Up(x-large){
+            height: 51vh;
+            width: 39vw;
+        }
+
+        @include breakpoint-Up(xx-large){
+            margin: 10rem 0 1rem 5rem;
+        }
+    }
+
+    &_image{
+        @include breakpoint-Up(small){
+            order:1;
+            text-align: left;
+        }
+    }
+
+    &_heroImage{
+        width: 89vw;
+        background-image: url(../images/illustration-hero.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 32vh;
+        margin-top: -15.5rem;
+        margin-left: 1.5rem;
+
+        @include breakpoint-Up(xx-small){
+            height: 48vh;
+            margin-top: -19.5rem;
+            margin-left: 2rem;
+        }
+
+        @include breakpoint-Up(x-small){
+            position: absolute;
+            height: 61vh;
+            width: 92vw;
+            background-size: contain;
+            top: 28rem;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+
+        @include breakpoint-Up(smaller){
+            top: 27rem;
+            left: 3rem;
+        }
+
+        @include breakpoint-Up(small){
+            width: 54vw;
+            margin-left: 20rem;
+            margin-top: -17rem;
+        }
+
+        @include breakpoint-Up(medium){
+            margin-top: -18rem;
+            margin-left: 21rem;
+        }
+
+        @include breakpoint-Up(large){
+            margin-left: 26rem;
+            margin-top: -18rem;
+        }
+
+        @include breakpoint-Up(larger){
+            margin-left: 32rem;
+            margin-top: -20rem;
+        }
+
+        @include breakpoint-Up(x-large){
+            margin-left: 36rem;
+            margin-top: -18rem;
+            width: 45vw;
+            background-size: cover;
+        }
+
+        @include breakpoint-Up(xx-large){
+            margin-left: 40rem;
+            margin-top: -17rem;
+       }
+    }
+
+    &_data {
+        text-align: center;
+
+        @include breakpoint-Up(small){
+            text-align: left;
+        }
+
+        @include breakpoint-Up(larger){
+            margin-left: 2rem;
+        }
+
+        @include breakpoint-Up(larger){
+            margin-left: 4rem;
+        }
+        
+        @include breakpoint-Up(xx-large){
+            margin-left: 5rem;
+        }
+
+        h1{
+            padding-top: 2.5rem;
+
+            @include breakpoint-Up(x-small){
+                font-size: 32px;
+            }    
+
+            @include breakpoint-Up(smaller){
+                margin: 3rem 7rem 0;
+            }  
+            
+
+            @include breakpoint-Up(small){
+                font-size: 28px;
+                margin: 3rem 3rem 1rem;
+            }
+
+            @include breakpoint-Up(large){
+                font-size: 34px;
+            }
+
+            @include breakpoint-Up(larger){
+                font-size: 36px;
+            }
+
+            @include breakpoint-Up(x-large){
+                font-size: 44px;
+            }
+        }
+
+        p{
+            @include breakpoint-Up(xx-small){
+                font-size: 16px;
+                margin: 2rem 6rem 1.5rem;
+            }   
+            
+            @include breakpoint-Up(small){
+                font-size: 16px;
+                margin: 0 4.5rem 2rem 3rem;
+            } 
+
+            @include breakpoint-Up(medium){
+                font-size: 15px;
+                margin: 0px 5.5rem 2rem 3rem;
+            }
+
+            @include breakpoint-Up(large){
+                font-size: 18px;
+                margin: 0 7.5rem 2rem 3rem;
+            } 
+
+            @include breakpoint-Up(larger){
+                font-size: 20px;
+                margin: 0px 3.5rem 2rem 3rem;
+            }
+
+            @include breakpoint-Up(x-large){
+                margin: 0px 5.5rem 2rem 3rem;
+            }
+
+            @include breakpoint-Up(x-large){
+                font-size:17px;
+                margin: 0px 7.5rem 2rem 3rem;
+            }
+        }
+
+        button{
+            background-color: #5368df;
+            padding: 1rem 1.25rem;
+            font-size: 14.5px;
+            letter-spacing: 0.5px;
+            box-shadow: 0px 2px rgba(165, 106, 106, 0.35);
+
+            @include breakpoint-Up(xx-small){
+                padding: 1rem 2.25rem;
+                font-size: 16.5px;
+                border-radius: 0.5rem;
+            }
+
+            @include breakpoint-Up(small){
+                padding: 1rem 1.25rem;
+                font-size: 11.5px;
+                margin-left: 3rem;
+            }
+       }
+
+       button:hover{
+        background-color: transparent;
+        color:$softBlue;
+        border: 1px solid $softBlue;
+       }
+
+        .firefox{
+            color: #252b46;
+            background-color: #f1f1f1;
+            margin-left: 1.5rem;
+            font-weight: 700;
+        }
+
+        .firefox:hover{
+            color: #252b46;
+            background-color: transparent;
+            border: 1px solid #252b46;
+        }
+    }
+}

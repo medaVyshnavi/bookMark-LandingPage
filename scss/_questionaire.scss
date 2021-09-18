@@ -1,0 +1,106 @@
+.question{
+    margin:8rem 1rem;
+
+    &_header{
+        margin: 0 2rem;
+        text-align: center;
+
+        h3{
+            font-size:23px;
+            color:$veryDarkBlue;
+        }
+
+        p{
+            margin: 1rem 0 1.5rem;
+            
+            @include breakpoint-Up(x-small){
+                margin: 1rem 4rem 0;
+            }
+
+            @include breakpoint-Up(smaller){
+                margin: 1rem 6rem 0;
+            }
+
+            @include breakpoint-Up(small){
+                margin: 1rem 12rem 0;
+            }
+
+            @include breakpoint-Up(large){
+                margin: 1rem 19rem 0;
+            }
+
+            @include breakpoint-Up(large){
+                margin: 1rem 24rem 0;
+            }
+        }
+    }
+
+    &_body{
+        margin-top: 5rem;
+
+        @include breakpoint-Up(x-small){
+            margin: 5rem 3rem 0;
+        }
+
+        @include breakpoint-Up(smaller){
+            margin: 5rem 7rem 0;
+        }
+
+        @include breakpoint-Up(medium){
+            margin: 5rem 13rem 0;
+        }
+
+        @include breakpoint-Up(large){
+            margin: 5rem 16rem 0;
+        }
+
+        @include breakpoint-Up(x-large){
+            margin: 4rem 22rem 0;
+        }
+        
+        .faq_body{
+            padding: 1rem 0 0;
+            border-bottom: 1px solid #d4d0d0;
+            margin: 0 1rem;
+        }
+
+        h5{
+            font-size: 13px;
+            display: inline;
+            color:$veryDarkBlue;
+            font-weight: $bold;
+        }
+
+        h5:hover{
+            color: $softRed;
+        }
+        
+        p{
+            margin: 0.5rem 0;
+            max-height: 0;
+            overflow: hidden;
+        }
+        .questions:after{
+            content: url(../images/icon-arrow.svg);
+            float: right;
+            margin-top: 0.4rem;
+        }
+
+        .questions.is-open:after{
+            transform: rotate(180deg);
+            content:url(../logoColor/icon-arrow.svg)
+        }
+    }
+
+    .faq_button{
+        text-align: center;
+
+        button{
+            background-color: #5368df;
+            padding: 0.5rem 1.5rem;
+            text-align: center;
+            margin: 3rem 0 0;
+            font-size: 13px;
+        }
+    }
+}
