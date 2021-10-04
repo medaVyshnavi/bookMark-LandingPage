@@ -12,4 +12,4 @@ This is a solution to the [Bookmark landing page challenge on Frontend Mentor](h
 - Mobile-first workflow
 - Vanila JS DOM
 
-Live Site URL: [See Live](https://nifty-hopper-501f6f.netlify.app)
+Live Site URL: [See Live](https://landingpage-bookmark.netlify.app)
